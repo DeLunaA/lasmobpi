@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class PanierDB {
         private static final int VERSION_BDD = 1;
-        private static final String NOM_BDD = "panier.db";
+        private static final String NOM_BDD = "panier03.db";
 
         private static final String TABLE_PANIER = "table_Panier";
 
@@ -21,13 +21,12 @@ public class PanierDB {
         //creation base de données
         private SQLiteDatabase bdd;
 
-        //jebneha mn MaBaseSQLite l stucture de bd
 
-        private panier.MaBaseSQLite maBaseSQLite;
+        private panier.MaBaseSQLite03 maBaseSQLite;
 
         public PanierDB(Context context) {
             //On créer la BDD et sa table et on va declencher method maBaseSQLite et apres elle va aussi declencher onCreate et onUpgrade
-            maBaseSQLite = new panier.MaBaseSQLite(context, NOM_BDD, null, VERSION_BDD);
+            maBaseSQLite = new panier.MaBaseSQLite03(context, NOM_BDD, null, VERSION_BDD);
 
         }
 
@@ -77,6 +76,30 @@ public class PanierDB {
                 else
                         return true;
         }
+
+
+        public panier getpanierWithTelephone(String Tel) {
+                Cursor f = bdd.query(TABLE_PANIER, new String[]{"Tel", "Iteam"}, "Tel=?", new String[]{String.valueOf(Tel)},
+                        null, null, null, null);
+
+                if (f.getCount() == 0)
+                        return null;
+
+                f.moveToFirst();
+
+                panier panier = new panier(f.getString(0), f.getString(1));
+                return panier;
+
+        }
+
+        /*public panier droppanier(String Tel) {
+                Cursor f = bdd.delete(TABLE_PANIER, null, null)
+
+                panier panier = new panier(f.getString(0), f.getString(1));
+                return panier;
+
+        }*/
+
 
 }
 

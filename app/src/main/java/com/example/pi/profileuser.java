@@ -44,6 +44,7 @@ public class profileuser extends AppCompatActivity {
         db.open();
         user = db.getUserWithTelephone(Tel) ;
         db.close();
+
         textviewname = findViewById(R.id.enom);
         lastname = findViewById(R.id.eprenom);
         textviewtel = findViewById(R.id.etel);

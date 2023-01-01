@@ -16,6 +16,7 @@ public class icedcoffee extends AppCompatActivity {
     TextView txthot;
     TextView Iteam1;
     ImageView im1;
+    ImageView card;
 
     SharedPreferences sharedPreferences ;
 
@@ -52,16 +53,26 @@ public class icedcoffee extends AppCompatActivity {
 
         });
 
-        im1=(ImageView) findViewById(R.id.buy1);
-        Iteam1=(TextView) findViewById(R.id.iteam1);
+        card=(ImageView)findViewById(R.id.Icard);
+        card.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)  {
+                Intent act2 = new Intent(icedcoffee.this ,orders.class);
+                startActivity(act2);
+            }
 
+        });
+
+
+        im1=(ImageView) findViewById(R.id.buy1);
         im1.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)  {
-                String i1 = "iteam1";
+                String i1 = "Iced latte";
                 db.open();
-                panier p1 = new panier(Tel,i1);     ///  u1 will be created with the essential infos once insc has been clicked
+                panier p1 = new panier(Tel,i1);
                 db.insertPanier(p1);
                 db.close();
                 Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();

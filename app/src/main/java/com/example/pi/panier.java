@@ -8,24 +8,25 @@ import androidx.annotation.Nullable;
 
 public class panier {
     private String Tel;
+    private String Iteam;
+
 
     public String getTel() {
         return Tel;
-    }
-
-    public void setTel(String tel) {
-        Tel = tel;
     }
 
     public String getIteam() {
         return Iteam;
     }
 
-    public void setIteam(String iteam) {
-        Iteam = iteam;
+    public void setTel(String tel) {
+        this.Tel = tel;
     }
 
-    private String Iteam;
+    public void setIteam(String iteam) {
+        this.Iteam = iteam;
+    }
+
 
     public panier(String Tel, String Iteam) {
         this.Tel = Tel;
@@ -36,12 +37,12 @@ public class panier {
     public panier() {
     }
 
-    public static class MaBaseSQLite extends SQLiteOpenHelper {
+    public static class MaBaseSQLite03 extends SQLiteOpenHelper {
         private static final String TABLE_PANIER = "table_Panier";
         private static final String COL_Tel = "Tel";
         private static final String COL_Iteam = "Iteam";
 
-        public MaBaseSQLite(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+        public MaBaseSQLite03(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
             super(context, name, factory, version);
         }
 
