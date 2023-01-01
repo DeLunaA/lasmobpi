@@ -48,7 +48,10 @@
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/coffeelogo" />
+
             </com.google.android.material.card.MaterialCardView>
+
+
 
         </LinearLayout>
 
@@ -59,14 +62,27 @@
             android:layout_marginEnd="20dp">
 
 
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/icard"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="80dp">
+
+                <ImageView
+                    android:id="@+id/Icard"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_playlist_add_check_24"/>
+
+            </com.google.android.material.card.MaterialCardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginStart="10dp"
                 app:cardCornerRadius="5dp">
-
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -242,7 +258,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="5dp"
                                         android:layout_weight="1"
-                                        android:text="3.900 DT"
+                                        android:text="3.900 DT    04 beans"
                                         android:textColor="@color/black"
                                         android:textSize="14dp" />
 
@@ -343,7 +359,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="5dp"
                                         android:layout_weight="1"
-                                        android:text="3.900 DT"
+                                        android:text="3.900 DT    04 beans"
                                         android:textColor="@color/black"
                                         android:textSize="14dp" />
 
@@ -452,7 +468,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="5dp"
                                         android:layout_weight="1"
-                                        android:text="4.600 DT"
+                                        android:text="4.600 DT    06 beans"
                                         android:textColor="@color/black"
                                         android:textSize="14dp" />
 
@@ -553,7 +569,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="5dp"
                                         android:layout_weight="1"
-                                        android:text="4.900 DT"
+                                        android:text="4.900 DT    04 beans"
                                         android:textColor="@color/black"
                                         android:textSize="14dp" />
 
@@ -662,7 +678,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="5dp"
                                         android:layout_weight="1"
-                                        android:text="5.900 DT"
+                                        android:text="5.900 DT    06 beans"
                                         android:textColor="@color/black"
                                         android:textSize="14dp" />
 
@@ -763,7 +779,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginStart="5dp"
                                         android:layout_weight="1"
-                                        android:text="4.900 DT"
+                                        android:text="4.900 DT    06 beans"
                                         android:textColor="@color/black"
                                         android:textSize="14dp" />
 
