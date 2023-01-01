@@ -55,7 +55,7 @@
                 android:id="@+id/Textem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enter your Tel"
+                android:text="Enter your Phone number"
                 android:textAlignment="center"
                 android:textColor="@color/coffee"
                 android:textSize="18sp" />
@@ -68,7 +68,7 @@
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/ic_baseline_drive_file_rename_outline_24"
                 android:drawablePadding="8dp"
-                android:hint="Email"
+                android:hint="Phone"
                 android:padding="8dp"
                 android:textColor="@color/black" />
 

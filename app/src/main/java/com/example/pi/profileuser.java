@@ -44,7 +44,7 @@ public class profileuser extends AppCompatActivity {
         db.open();
         user = db.getUserWithTelephone(Tel) ;
         db.close();
-         textviewname = findViewById(R.id.enom);
+        textviewname = findViewById(R.id.enom);
         lastname = findViewById(R.id.eprenom);
         textviewtel = findViewById(R.id.etel);
         textviewemail = findViewById(R.id.eemail);
@@ -71,15 +71,10 @@ public class profileuser extends AppCompatActivity {
             M.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-
-                                db.open();
-                            db.updateuser(email,mps,Nom,email,prennom) ;
-                                    db.close();
+                    db.open();
+                    db.updateuser(email,mps,Nom,email,prennom) ;
+                    db.close();
                     Toast.makeText(profileuser.this, "account updated successfuly",Toast.LENGTH_SHORT).show();
-
-
-
                 }
             });
 
