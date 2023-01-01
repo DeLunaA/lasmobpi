@@ -15,17 +15,21 @@ public class panier {
         return Tel;
     }
 
+
     public String getIteam() {
         return Iteam;
     }
+
 
     public void setTel(String tel) {
         this.Tel = tel;
     }
 
+
     public void setIteam(String iteam) {
         this.Iteam = iteam;
     }
+
 
 
     public panier(String Tel, String Iteam) {
