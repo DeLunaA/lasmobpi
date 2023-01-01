@@ -13,7 +13,11 @@
         android:theme="@style/Theme.Pi"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".orders"
+=======
+            android:name=".Contact"
+>>>>>>> 6cc65bebe7a0bb0608591b074e45ea5c9892423a
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
