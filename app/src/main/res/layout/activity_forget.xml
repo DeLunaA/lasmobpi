@@ -55,7 +55,7 @@
                 android:id="@+id/Textem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enter your email"
+                android:text="Enter your Tel"
                 android:textAlignment="center"
                 android:textColor="@color/coffee"
                 android:textSize="18sp" />

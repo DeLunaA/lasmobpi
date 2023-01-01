@@ -8,7 +8,8 @@
     android:background="@drawable/whitecofbackground"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".loginpage">
+    tools:context=".profileuser">
+
 
 
     <androidx.cardview.widget.CardView
@@ -44,32 +45,75 @@
                 android:id="@+id/loginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Profile"
                 android:textAlignment="center"
                 android:textColor="@color/coffee"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/txtuser"
+            <TextView
+                android:id="@+id/Noommerr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/enom"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
                 android:drawablePadding="8dp"
-                android:hint="Tel"
+                android:hint="Name"
+                android:padding="5dp"
+                android:paddingStart="13dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/eprenom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_baseline_drive_file_rename_outline_24"
+                android:drawablePadding="8dp"
+                android:hint="Last name"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
 
             <EditText
-                android:id="@+id/txtpwd"
+                android:id="@+id/etel"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/mainlock"
+                android:drawableLeft="@drawable/ic_baseline_drive_file_rename_outline_24"
+                android:drawablePadding="8dp"
+                android:hint="Phone"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/eemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_baseline_drive_file_rename_outline_24"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+            <TextView
+                android:id="@+id/emdp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_baseline_drive_file_rename_outline_24"
                 android:drawablePadding="8dp"
                 android:hint="Password"
                 android:inputType="textPassword"
@@ -78,39 +122,14 @@
                 android:textColorHighlight="@color/cardview_dark_background" />
 
             <Button
-                android:id="@+id/btnfor"
-                android:layout_width="460dp"
-                android:layout_height="33dp"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="@color/white"
-                android:text="Forget password"
-                android:textColor="@color/coffee"
-                android:textSize="10sp"
-                android:visibility="visible"
-                card_view:cornerRadius="10dp" />
-
-            <Button
-                android:id="@+id/btnlog"
-                android:layout_width="280dp"
+                android:id="@+id/update"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="@color/coffee"
-                android:text="Login"
+                android:text="update"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
-
-            <Button
-                android:id="@+id/btnn"
-                android:layout_width="280dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/coffee"
-                android:text="Create an account "
-                android:textSize="16dp"
-                android:visibility="visible"
-                card_view:cornerRadius="20dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

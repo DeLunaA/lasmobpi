@@ -35,7 +35,7 @@ public class forget extends AppCompatActivity {
                 String user = emaill.getText().toString();
 
                 db.open();
-                Boolean checkuserr=db.checkuserEmail(user);
+                Boolean checkuserr=db.checkuserTel(user);
                 db.close();
 
                 if(checkuserr==true)
@@ -43,6 +43,9 @@ public class forget extends AppCompatActivity {
                     Intent intent = new Intent(forget.this ,ResetActivity.class);
                     intent.putExtra("keyemail",user);
                     startActivity(intent);
+
+
+
 
                 }else
                 {

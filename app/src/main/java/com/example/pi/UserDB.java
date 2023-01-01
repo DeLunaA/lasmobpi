@@ -92,8 +92,8 @@ public class UserDB {
 
     }
 
-    public Boolean checkuserpass(String eEmail, String ePassword) {
-        Cursor m = bdd.rawQuery("select * from table_user where Mdp= ? and  Email = ? ", new String[]{ePassword,eEmail });
+    public Boolean checkuserpass(String ettel, String ePassword) {
+        Cursor m = bdd.rawQuery("select * from table_user where Mdp= ? and  Tel = ? ", new String[]{ePassword,ettel });
 
         if (m.getCount() > 0)
             return true;
@@ -106,6 +106,15 @@ public class UserDB {
     public Boolean checkuserEmail(String eEmail) {
 
         Cursor q = bdd.rawQuery("select * from TABLE_USER where Email= ?" , new String[]{eEmail});
+        if (q.getCount() > 0)
+            return true;
+        else
+            return false;
+    }
+
+    public Boolean checkuserTel(String t) {
+
+        Cursor q = bdd.rawQuery("select * from TABLE_USER where Tel= ?" , new String[]{t});
         if (q.getCount() > 0)
             return true;
         else
