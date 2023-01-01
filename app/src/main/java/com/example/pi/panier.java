@@ -37,13 +37,17 @@ public class panier {
     }
 
     public static class MaBaseSQLite extends SQLiteOpenHelper {
+
         private static final String TABLE_PANIER = "table_Panier";
         private static final String COL_Tel = "Tel";
         private static final String COL_Iteam = "Iteam";
 
+
         public MaBaseSQLite(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+
             super(context, name, factory, version);
         }
+
 
         @Override
         public void onCreate(SQLiteDatabase db) {
@@ -51,6 +55,8 @@ public class panier {
             db.execSQL("CREATE TABLE " + TABLE_PANIER + " ("
                     + COL_Tel + " TEXT PRIMARY KEY," + COL_Iteam + " TEXT);");
         }
+
+
 
         @Override
         public void onUpgrade(SQLiteDatabase db, int i, int i1) {

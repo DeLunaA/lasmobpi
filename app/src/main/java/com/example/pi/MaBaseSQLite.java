@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class MaBaseSQLite extends SQLiteOpenHelper {
+
+
     private static final String TABLE_USER = "table_user";
     private static final String COL_Nom = "Nom";
     private static final String COL_Prenom = "Prenom";

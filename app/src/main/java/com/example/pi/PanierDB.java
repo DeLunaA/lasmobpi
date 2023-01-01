@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class PanierDB {
+
         private static final int VERSION_BDD = 1;
         private static final String NOM_BDD = "panier.db";
 
