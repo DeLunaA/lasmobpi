@@ -124,12 +124,24 @@ public class UserDB {
     public Boolean updatepass(String Email,String pass){
         ContentValues contentValues=new ContentValues();
         contentValues.put("Mdp",pass);
+        long result=bdd.update("TABLE_USER",contentValues,"Tel=?",new String[]{Email});
+        if (result==-1)
+            return false;
+        else
+            return true;
+    }
+
+
+    public Boolean updateuser(String Email,String pass ,String nom , String tel ,String pre){
+        ContentValues contentValues=new ContentValues();
+        contentValues.put("Mdp",pass);
         long result=bdd.update("TABLE_USER",contentValues,"Email=?",new String[]{Email});
         if (result==-1)
             return false;
         else
             return true;
     }
+
 
 
 

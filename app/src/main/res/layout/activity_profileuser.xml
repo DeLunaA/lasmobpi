@@ -54,9 +54,9 @@
             <TextView
                 android:id="@+id/Noommerr"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
-            <TextView
+            <EditText
                 android:id="@+id/enom"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -69,7 +69,7 @@
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
 
-            <TextView
+            <EditText
                 android:id="@+id/eprenom"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -95,7 +95,7 @@
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
 
-            <TextView
+            <EditText
                 android:id="@+id/eemail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -107,7 +107,8 @@
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
-            <TextView
+
+            <EditText
                 android:id="@+id/emdp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -116,7 +117,6 @@
                 android:drawableLeft="@drawable/ic_baseline_drive_file_rename_outline_24"
                 android:drawablePadding="8dp"
                 android:hint="Password"
-                android:inputType="textPassword"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />

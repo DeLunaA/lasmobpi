@@ -45,8 +45,6 @@ public class forget extends AppCompatActivity {
                     startActivity(intent);
 
 
-
-
                 }else
                 {
                     Toast.makeText(forget.this,"User does not existe",Toast.LENGTH_SHORT).show();
