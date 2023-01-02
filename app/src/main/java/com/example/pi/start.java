@@ -17,7 +17,7 @@ public class start extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_start);
 
-        Button home = findViewById(R.id.btnmenu);
+        Button home = findViewById(R.id.cont);
         Button profile = findViewById(R.id.btnprofile);
         Button beans = findViewById(R.id.btnbeans);
         Button contact = findViewById(R.id.btncontact);
@@ -42,6 +42,14 @@ public class start extends AppCompatActivity {
                         startActivity(act20);
                     }
                 }));
+
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent act20 = new Intent(start.this ,Contact.class);
+                startActivity(act20);
+            }
+        });
 
 
     }

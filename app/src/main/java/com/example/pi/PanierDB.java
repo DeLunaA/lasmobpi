@@ -93,6 +93,8 @@ public class PanierDB {
 
         }
 
+
+
         /*public panier droppanier(String Tel) {
                 Cursor f = bdd.delete(TABLE_PANIER, null, null)
 

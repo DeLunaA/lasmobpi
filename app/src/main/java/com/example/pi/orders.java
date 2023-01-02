@@ -27,6 +27,8 @@ public class orders extends AppCompatActivity {
     PanierDB db  = new PanierDB(orders.this);
     panier panier ;
 
+
+    Button m ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +39,6 @@ public class orders extends AppCompatActivity {
         sharedPreferences = getSharedPreferences(shared_ref, MODE_PRIVATE);
 
         String Tel = sharedPreferences.getString(Key_nom,null);
-
-        Toast.makeText(orders.this,Tel,Toast.LENGTH_SHORT).show();
 
 
         db.open();
@@ -61,6 +61,16 @@ public class orders extends AppCompatActivity {
                 Toast.makeText(orders.this, "Order successfully delivered",Toast.LENGTH_SHORT).show();
             }
 
+        });
+
+        m = findViewById(R.id.cancel);
+
+        m.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(orders.this ,icedcoffee.class);
+                startActivity(intent);
+            }
         });
 
 

@@ -12,7 +12,7 @@ public class MaBaseSQLite03 extends SQLiteOpenHelper {
     private static final String COL_Iteam = "Iteam";
 
     private static final String CREATE_TABLE_PANIER = "CREATE TABLE " + TABLE_PANIER + " ("
-            + COL_tel + " TEXT," + COL_Iteam
+            + COL_tel + " TEXT PRIMARY KEY," + COL_Iteam
             + " TEXT);" ;
 
     private static final String update_db = "DROP TABLE " + TABLE_PANIER + ";";

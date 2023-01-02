@@ -49,7 +49,7 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
             <Button
-                android:id="@+id/btnmenu"
+                android:id="@+id/cont"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"

@@ -73,6 +73,7 @@ public class icedcoffee extends AppCompatActivity {
         {
             @Override
             public void onClick(View view)  {
+
                 String i1 = "Iced latte";
 
                 db.open();
@@ -87,11 +88,13 @@ public class icedcoffee extends AppCompatActivity {
                     Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
                 }
                 else{
+
                     panier p1 = new panier(Tel,i1);
                     db.open();
                     db.insertPanier(p1);
                     db.close();
                     Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+
                 }
 
 
@@ -106,12 +109,26 @@ public class icedcoffee extends AppCompatActivity {
             public void onClick(View view)  {
                 String i2 = "Iced Caramel Macchiato";
                 db.open();
-                panier p1 = new panier(Tel,i2);
-                db.insertPanier(p1);
+                Boolean tcheckuser=db.checkuser(Tel);
                 db.close();
-                Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+
+                if(tcheckuser==true)
+                {
+                    db.open();
+                    Boolean check_pass_update=db.updatepanier(Tel,i2);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }else{
+                    db.open();
+                    panier p1 = new panier(Tel,i2);
+                    db.insertPanier(p1);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }
+
 
             }
+
 
         });
 
@@ -120,12 +137,25 @@ public class icedcoffee extends AppCompatActivity {
         {
             @Override
             public void onClick(View view)  {
-                String i2 = "Iced Cappuccino";
+                String i2 = "Cold cappuccino";
+
                 db.open();
-                panier p1 = new panier(Tel,i2);
-                db.insertPanier(p1);
+                Boolean tcheckuser=db.checkuser(Tel);
                 db.close();
-                Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+
+                if(tcheckuser==true)
+                {
+                    db.open();
+                    Boolean check_pass_update=db.updatepanier(Tel,i2);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }else{
+                    db.open();
+                    panier p1 = new panier(Tel,i2);
+                    db.insertPanier(p1);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }
 
             }
 
@@ -138,11 +168,22 @@ public class icedcoffee extends AppCompatActivity {
             public void onClick(View view)  {
                 String i2 = "Cold Brew Latte";
                 db.open();
-                panier p1 = new panier(Tel,i2);
-                db.insertPanier(p1);
+                Boolean tcheckuser=db.checkuser(Tel);
                 db.close();
-                Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
 
+                if(tcheckuser==true)
+                {
+                    db.open();
+                    Boolean check_pass_update=db.updatepanier(Tel,i2);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }else{
+                    db.open();
+                    panier p1 = new panier(Tel,i2);
+                    db.insertPanier(p1);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }
             }
 
         });
@@ -154,11 +195,22 @@ public class icedcoffee extends AppCompatActivity {
             public void onClick(View view)  {
                 String i2 = "Iced Americano";
                 db.open();
-                panier p1 = new panier(Tel,i2);
-                db.insertPanier(p1);
+                Boolean tcheckuser=db.checkuser(Tel);
                 db.close();
-                Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
 
+                if(tcheckuser==true)
+                {
+                    db.open();
+                    Boolean check_pass_update=db.updatepanier(Tel,i2);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }else{
+                    db.open();
+                    panier p1 = new panier(Tel,i2);
+                    db.insertPanier(p1);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }
             }
 
         });
@@ -170,10 +222,22 @@ public class icedcoffee extends AppCompatActivity {
             public void onClick(View view)  {
                 String i2 = "Cold Brew Latte";
                 db.open();
-                panier p1 = new panier(Tel,i2);
-                db.insertPanier(p1);
+                Boolean tcheckuser=db.checkuser(Tel);
                 db.close();
-                Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+
+                if(tcheckuser==true)
+                {
+                    db.open();
+                    Boolean check_pass_update=db.updatepanier(Tel,i2);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }else{
+                    db.open();
+                    panier p1 = new panier(Tel,i2);
+                    db.insertPanier(p1);
+                    db.close();
+                    Toast.makeText(icedcoffee.this,"Iteam added with success",Toast.LENGTH_SHORT).show();
+                }
 
             }
 
