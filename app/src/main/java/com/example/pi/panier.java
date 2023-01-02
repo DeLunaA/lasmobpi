@@ -48,6 +48,7 @@ public class panier {
 
         public MaBaseSQLite03(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
             super(context, name, factory, version);
+
         }
 
         @Override

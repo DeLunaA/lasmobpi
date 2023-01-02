@@ -41,6 +41,7 @@ public class icedcoffee extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences(shared_ref, MODE_PRIVATE);
 
+
         String Tel = sharedPreferences.getString(Key_nom,null);
 
         txthot=(TextView)findViewById(R.id.bhot);
@@ -73,6 +74,7 @@ public class icedcoffee extends AppCompatActivity {
             @Override
             public void onClick(View view)  {
                 String i1 = "Iced latte";
+
                 db.open();
                 Boolean tcheckuser=db.checkuser(Tel);
                 db.close();
